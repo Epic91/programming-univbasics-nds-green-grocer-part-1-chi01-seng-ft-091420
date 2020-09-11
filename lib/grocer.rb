@@ -1,20 +1,16 @@
 def find_item_by_name_in_collection(name, collection)
-  grocery_shelf = [
-  { :item => "CANNED BEANS", :price => 3.00, :clearance => true },
-  { :item => "CANNED CORN", :price => 2.50, :clearance => false },
-  { :item => "SALSA", :price => 1.50, :clearance => false },
-  { :item => "TORTILLAS", :price => 2.00, :clearance => false },
-  { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
-]  # Implement me first!
-  #
-  # Consult README for inputs and outputs
+  index = 0
 
+  while  index < collection.length do
+    return collection[index] if collection[:index][:item] == name
+    index += 1
+  end
 end
 
 def consolidate_cart(cart)
   index = 0
   new_cart = []
-  
+
   while index < cart.length do
     item = find_item_by_name_in_collection(cart[index][:item], new_cart)
     if item
