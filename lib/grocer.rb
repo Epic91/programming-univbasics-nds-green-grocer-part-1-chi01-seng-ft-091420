@@ -6,6 +6,7 @@ def find_item_by_name_in_collection(name, collection)
   { :item => "TORTILLAS", :price => 2.00, :clearance => false },
   { :item => "HOT SAUCE", :price => 1.75, :clearance => false }
 ]
+find_item_by_name_in_collection("DOG FOOD", grocery_shelf)
   # Implement me first!
   #
   # Consult README for inputs and outputs
