@@ -17,7 +17,7 @@ def consolidate_cart(cart)
     items_array.each do |ietm, attribute_hash|
       new_cart[item] ||= attribute_hash
       new_cart[item][:count] ? new_cart[item][:count] += 1 :
-      new_cart[item][:count] = 1    
+      new_cart[item][:count] = 1
   end
 end
 new_cart
